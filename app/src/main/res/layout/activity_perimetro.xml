@@ -42,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
-        android:text="Fórmula: A + B + C"
+        android:text="Fórmula: L1 + L2 + L3"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,40 +51,40 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewSubTituloPerimetro" />
 
     <TextView
-        android:id="@+id/textViewLadoA"
+        android:id="@+id/textViewLado1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="15dp"
-        android:text="A = "
+        android:text="L1 = "
         android:textSize="26sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/editTextLadoA"
-        app:layout_constraintTop_toTopOf="@+id/editTextLadoA" />
+        app:layout_constraintEnd_toStartOf="@+id/editTextLado1"
+        app:layout_constraintTop_toTopOf="@+id/editTextLado1" />
 
     <TextView
-        android:id="@+id/textViewLadoB"
+        android:id="@+id/textViewLado2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="39dp"
-        android:text="B  = "
+        android:text="L2  = "
         android:textSize="26sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textViewLadoA"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLadoA" />
+        app:layout_constraintStart_toStartOf="@+id/textViewLado1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLado1" />
 
     <TextView
-        android:id="@+id/textViewLadoC"
+        android:id="@+id/textViewLado3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="38dp"
-        android:text="C = "
+        android:text="L3 = "
         android:textSize="26sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textViewLadoB"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLadoB" />
+        app:layout_constraintStart_toStartOf="@+id/textViewLado2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLado2" />
 
     <EditText
-        android:id="@+id/editTextLadoA"
+        android:id="@+id/editTextLado1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
@@ -95,24 +95,24 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewSubTituloPerimetro" />
 
     <EditText
-        android:id="@+id/editTextLadoB"
+        android:id="@+id/editTextLado2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="29dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="@+id/editTextLadoA"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLadoA" />
+        app:layout_constraintStart_toStartOf="@+id/editTextLado1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLado1" />
 
     <EditText
-        android:id="@+id/editTextLadoC"
+        android:id="@+id/editTextLado3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="29dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="@+id/editTextLadoB"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLadoB" />
+        app:layout_constraintStart_toStartOf="@+id/editTextLado2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLado2" />
 
     <Button
         android:id="@+id/buttonCalcularPerimetro"
@@ -124,5 +124,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLadoC" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLado3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

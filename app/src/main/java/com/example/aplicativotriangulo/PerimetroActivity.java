@@ -23,16 +23,17 @@ public class PerimetroActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(PerimetroActivity.this, ResultadoActivity.class);
-                Double ladoA = getLadoA();
-                Double ladoB = getLadoB();
-                Double ladoC = getLadoC();
+                Double ladoA = getLado1();
+                Double ladoB = getLado2();
+                Double ladoC = getLado3();
 
                 if (ladoA <= 0 || ladoB <= 0 || ladoC <= 0) {
                     showMessage("Insira um valor maior que 0 nos três campos.");
                 } else {
-                    intent.putExtra("Lado A", getLadoA());
-                    intent.putExtra("Lado B", getLadoB());
-                    intent.putExtra("Lado C" , getLadoC());
+                    intent.putExtra("Lado 1", getLado1());
+                    intent.putExtra("Lado 2", getLado2());
+                    intent.putExtra("Lado 3" , getLado3());
+                    intent.putExtra("Opçao" , 2);
                     startActivity(intent);
                 }
             }
@@ -40,10 +41,10 @@ public class PerimetroActivity extends AppCompatActivity {
 
     }
 
-    private Double getLadoA() {
+    private Double getLado1() {
 
         try {
-            EditText text = findViewById(R.id.editTextLadoA);
+            EditText text = findViewById(R.id.editTextLado1);
             Double ladoA = Double.parseDouble(text.getText().toString());
             return ladoA;
         } catch (Exception e) {
@@ -51,10 +52,10 @@ public class PerimetroActivity extends AppCompatActivity {
         }
     }
 
-    private Double getLadoB() {
+    private Double getLado2() {
 
         try {
-            EditText text = findViewById(R.id.editTextLadoB);
+            EditText text = findViewById(R.id.editTextLado2);
             Double ladoB = Double.parseDouble(text.getText().toString());
             return ladoB;
         } catch (Exception e) {
@@ -63,10 +64,10 @@ public class PerimetroActivity extends AppCompatActivity {
 
     }
 
-    private Double getLadoC(){
+    private Double getLado3(){
 
         try {
-            EditText text = findViewById(R.id.editTextLadoC);
+            EditText text = findViewById(R.id.editTextLado3);
             Double ladoC = Double.parseDouble(text.getText().toString());
             return ladoC;
         } catch (Exception e){

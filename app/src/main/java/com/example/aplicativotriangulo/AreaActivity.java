@@ -30,7 +30,8 @@ public class AreaActivity extends AppCompatActivity {
                     showMessage("Insira um valor maior que 0 nos dois campos.");
                 } else {
                     intent.putExtra("Altura", getAltura());
-                    intent.putExtra("Peso", getBase());
+                    intent.putExtra("Base", getBase());
+                    intent.putExtra("Opçao", 1);
                     startActivity(intent);
                 }
             }
